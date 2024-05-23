@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="https://www.omg.org/spec/XMI/2.1.1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML">
+  <uml:Model xmi:id="1effe60535224410a2da4ac86146b481" name="sd_model">
+    <packagedElement xmi:id="defaultEventOfMessageOccurrency" xmi:type="uml:AnyReceiveEvent" />
+    <packagedElement xmi:type="uml:Collaboration">
+      <ownedBehavior xmi:id="254deb6de55c4395a943e836f1c26ea4" xmi:type="uml:Interaction" name="Sequence Diagram1">
+        <packagedElement xmi:id="432a06845bd84b47b5f66259eb1895b4" xmi:type="uml:Package" name="Диаграмма последовательностей - Schedule editor&#10;Никитас Н.Д., ПМИ-2, 21.02.2019">
+          <ownedBehavior xmi:id="bd0e2dece5c5437c8bbb8ab24adae5cc" xmi:type="uml:Interaction" name="Sequence Diagram1">
+            <lifeline xmi:id="665558b4a7d04ecca6bedf64c5f79daa" xmi:type="uml:Lifeline" name="Редактор" coveredBy="0d335dc009b5400fbf344d3e96734921 4506ae264e784a6b8fe0437ee837be75">
+              <xmi:Extension extender="Visual Paradigm">
+                <stopped xmi:value="false" />
+              </xmi:Extension>
+            </lifeline>
+            <ownedComment xmi:id="d021ed5dde6c4d1fa0b59cf8381b3e0b" xmi:type="uml:Comment" name="" body="Создание ограничений на расписание" />
+            <lifeline xmi:id="9a04194d85284fa688ca6fd89f66655a" xmi:type="uml:Lifeline" name=":Cuctema" coveredBy="698d32e5f8f94df2a8d51b3e1c09b080 03e72543da0d4905bd61c931bf7f7fcd">
+              <xmi:Extension extender="Visual Paradigm">
+                <stopped xmi:value="false" />
+              </xmi:Extension>
+            </lifeline>
+            <message xmi:id="7a5e4d5307eb4b2bb5032872dacfc3f3" xmi:type="uml:Message" messageSort="synchCall" name="создатьОграниченияНаРасписание(списокОграничений)" receiveEvent="03e72543da0d4905bd61c931bf7f7fcd" sendEvent="0d335dc009b5400fbf344d3e96734921">
+              <Extension extender="Visual Paradigm">
+                <type xmi:value="recursive" />
+              </Extension>
+            </message>
+            <fragment xmi:id="0d335dc009b5400fbf344d3e96734921" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="665558b4a7d04ecca6bedf64c5f79daa" message="7a5e4d5307eb4b2bb5032872dacfc3f3" />
+            <fragment xmi:id="03e72543da0d4905bd61c931bf7f7fcd" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="9a04194d85284fa688ca6fd89f66655a" message="7a5e4d5307eb4b2bb5032872dacfc3f3" />
+            <message xmi:id="859f96c2f8fc48c6840e5c11c6cc6ac5" xmi:type="uml:Message" messageSort="reply" name="расписаниеСОграничениями" receiveEvent="4506ae264e784a6b8fe0437ee837be75" sendEvent="698d32e5f8f94df2a8d51b3e1c09b080">
+              <Extension extender="Visual Paradigm">
+                <type xmi:value="recursive" />
+              </Extension>
+            </message>
+            <fragment xmi:id="698d32e5f8f94df2a8d51b3e1c09b080" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="9a04194d85284fa688ca6fd89f66655a" message="859f96c2f8fc48c6840e5c11c6cc6ac5" />
+            <fragment xmi:id="4506ae264e784a6b8fe0437ee837be75" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="665558b4a7d04ecca6bedf64c5f79daa" message="859f96c2f8fc48c6840e5c11c6cc6ac5" />
+          </ownedBehavior>
+        </packagedElement>
+      </ownedBehavior>
+    </packagedElement>
+  </uml:Model>
+  <uml:Diagram xmi:id="b8ac3e7d84d648afbb97fa883af01976" diagramType="InteractionDiagram" documentation="">
+    <uml:Diagram.element>
+      <uml:DiagramElement id="99e84ce2c18c48d8aef391a774a6eb87" preferredShapeType="InteractionActor" subject="665558b4a7d04ecca6bedf64c5f79daa" geometry="8,108,122,489">
+        <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="c42b68850d7d48c7a03bdc1490d5bc1c" preferredShapeType="NOTE" subject="d021ed5dde6c4d1fa0b59cf8381b3e0b" geometry="210,159,614,98">
+        <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="0e945a4d2d854c538f42d53ca11a2dd1" preferredShapeType="InteractionLifeLine" subject="9a04194d85284fa688ca6fd89f66655a" geometry="990,99,214,498" />
+      <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+      <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+      <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      <uml:DiagramElement id="7253fb7f27e2401ea652ab2f41742a6b" preferredShapeType="Message" subject="7a5e4d5307eb4b2bb5032872dacfc3f3" geometry="77,312;1083,312;" fromDiagramElement="99e84ce2c18c48d8aef391a774a6eb87" toDiagramElement="0e945a4d2d854c538f42d53ca11a2dd1">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="85dfc1cf9a2e489e8f891caf8e97fb7f" preferredShapeType="Message" subject="859f96c2f8fc48c6840e5c11c6cc6ac5" geometry="1083,431;81,431;" fromDiagramElement="0e945a4d2d854c538f42d53ca11a2dd1" toDiagramElement="99e84ce2c18c48d8aef391a774a6eb87">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+    </uml:Diagram.element>
+  </uml:Diagram>
+</xmi:XMI>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model name="example2" xmi:id="BxarCPGGAqBwATUA" xmi:version="2.1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+	<xmi:Documentation exporter="Visual Paradigm" exporterVersion="7.0.2">
+	</xmi:Documentation>
+	<packagedElement xmi:type="uml:Collaboration">
+		<ownedBehavior name="Sequence Diagram1" xmi:id="IRGrCPGGAqBwATiA" xmi:type="uml:Interaction">
+			<lifeline coveredBy="k5I7CPGGAqBwATjY NaW7CPGGAqBwATku BnuHCPGGAqBwATlX 5MXHCPGGAqBwATmA kRg7CPGGAqBwATjJ s.U7CPGGAqBwATjw wUGHCPGGAqBwATlJ jAZHCPGGAqBwATlp" name="Система" represents="xR3bCPGGAqBwATio_represents" xmi:id="xR3bCPGGAqBwATio" xmi:type="uml:Lifeline">
+			</lifeline>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message="k5I7CPGGAqBwATjX" xmi:id="k5I7CPGGAqBwATjY" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="ZSHbCPGGAqBwATiU" event="defaultEventOfMessageOccurrency" message="k5I7CPGGAqBwATjX" xmi:id="k5I7CPGGAqBwATjZ" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message="NaW7CPGGAqBwATkt" xmi:id="NaW7CPGGAqBwATku" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="pavbCPGGAqBwATi2" event="defaultEventOfMessageOccurrency" message="NaW7CPGGAqBwATkt" xmi:id="NaW7CPGGAqBwATkv" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message=".nuHCPGGAqBwATlW" xmi:id="BnuHCPGGAqBwATlX" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="ZSHbCPGGAqBwATiU" event="defaultEventOfMessageOccurrency" message=".nuHCPGGAqBwATlW" xmi:id="BnuHCPGGAqBwATlY" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message="ZMXHCPGGAqBwATl_" xmi:id="5MXHCPGGAqBwATmA" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="ZSHbCPGGAqBwATiU" event="defaultEventOfMessageOccurrency" message="ZMXHCPGGAqBwATl_" xmi:id="5MXHCPGGAqBwATmB" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<message messageSort="synchCall" name="создатьЗаметку()" receiveEvent="kRg7CPGGAqBwATjJ" sendEvent="kRg7CPGGAqBwATjI" xmi:id="kRg7CPGGAqBwATjH" xmi:type="uml:Message">
+			</message>
+			<message messageSort="reply" name="заметка создана" receiveEvent="k5I7CPGGAqBwATjZ" sendEvent="k5I7CPGGAqBwATjY" xmi:id="k5I7CPGGAqBwATjX" xmi:type="uml:Message">
+			</message>
+			<message messageSort="synchCall" name="создатьСписокПолучателей()" receiveEvent="s.U7CPGGAqBwATjw" sendEvent="s.U7CPGGAqBwATjv" xmi:id="s.U7CPGGAqBwATju" xmi:type="uml:Message">
+			</message>
+			<message messageSort="synchCall" name="выбратьПолучателей()" receiveEvent="NaW7CPGGAqBwATkv" sendEvent="NaW7CPGGAqBwATku" xmi:id="NaW7CPGGAqBwATkt" xmi:type="uml:Message">
+			</message>
+			<message messageSort="reply" name="списокПолучателей" receiveEvent="wUGHCPGGAqBwATlJ" sendEvent="wUGHCPGGAqBwATlI" xmi:id="wUGHCPGGAqBwATlH" xmi:type="uml:Message">
+			</message>
+			<message messageSort="reply" name="списокПолучателей" receiveEvent="BnuHCPGGAqBwATlY" sendEvent="BnuHCPGGAqBwATlX" xmi:id=".nuHCPGGAqBwATlW" xmi:type="uml:Message">
+			</message>
+			<message messageSort="synchCall" name="[заметка, списокПолучателей созданы] отправитьЗаметку(заметка, списокПолучателей)" receiveEvent="jAZHCPGGAqBwATlp" sendEvent="jAZHCPGGAqBwATlo" xmi:id="DAZHCPGGAqBwATln" xmi:type="uml:Message">
+			</message>
+			<message messageSort="reply" name="заметка отправлена" receiveEvent="5MXHCPGGAqBwATmB" sendEvent="5MXHCPGGAqBwATmA" xmi:id="ZMXHCPGGAqBwATl_" xmi:type="uml:Message">
+			</message>
+			<fragment covered="ZSHbCPGGAqBwATiU" event="defaultEventOfMessageOccurrency" message="kRg7CPGGAqBwATjH" xmi:id="kRg7CPGGAqBwATjI" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message="kRg7CPGGAqBwATjH" xmi:id="kRg7CPGGAqBwATjJ" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="ZSHbCPGGAqBwATiU" event="defaultEventOfMessageOccurrency" message="s.U7CPGGAqBwATju" xmi:id="s.U7CPGGAqBwATjv" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message="s.U7CPGGAqBwATju" xmi:id="s.U7CPGGAqBwATjw" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="pavbCPGGAqBwATi2" event="defaultEventOfMessageOccurrency" message="wUGHCPGGAqBwATlH" xmi:id="wUGHCPGGAqBwATlI" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message="wUGHCPGGAqBwATlH" xmi:id="wUGHCPGGAqBwATlJ" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="ZSHbCPGGAqBwATiU" event="defaultEventOfMessageOccurrency" message="DAZHCPGGAqBwATln" xmi:id="jAZHCPGGAqBwATlo" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<fragment covered="xR3bCPGGAqBwATio" event="defaultEventOfMessageOccurrency" message="DAZHCPGGAqBwATln" xmi:id="jAZHCPGGAqBwATlp" xmi:type="uml:MessageOccurrenceSpecification">
+			</fragment>
+			<ownedAttribute name="Система" xmi:id="xR3bCPGGAqBwATio_represents"/>
+			<lifeline coveredBy="wUGHCPGGAqBwATlI NaW7CPGGAqBwATkv" name="БДОтделаКадров" represents="pavbCPGGAqBwATi2_represents" xmi:id="pavbCPGGAqBwATi2" xmi:type="uml:Lifeline">
+			</lifeline>
+			<ownedAttribute name="БДОтделаКадров" xmi:id="pavbCPGGAqBwATi2_represents"/>
+			<lifeline name="Отправитель" represents="ZSHbCPGGAqBwATiU_represents" xmi:id="ZSHbCPGGAqBwATiU" xmi:type="uml:Lifeline">
+			</lifeline>
+			<ownedAttribute name="Отправитель" xmi:id="ZSHbCPGGAqBwATiU_represents"/>
+		</ownedBehavior>
+	</packagedElement>
+	<packagedElement xmi:id="defaultEventOfMessageOccurrency" xmi:type="uml:AnyReceiveEvent"/>
+	<uml:Diagram diagramType="InteractionDiagram" documentation="" name="Sequence Diagram1" toolName="Visual Paradigm" xmi:id="HhGrCPGGAqBwATh8">
+		<uml:Diagram.element>
+			<uml:DiagramElement geometry="730,212,8,42" preferredShapeType="Activation" subject="C6W7CPGGAqBwATk8" xmi:id="66W7CPGGAqBwATk.">
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="500,131,8,234" preferredShapeType="Activation" subject="KRg7CPGGAqBwATjO" xmi:id="mRg7CPGGAqBwATjQ">
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="679,40,111,234" preferredShapeType="InteractionLifeLine" subject="pavbCPGGAqBwATi2" xmi:id="pavbCPGGAqBwATi1">
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="469,40,70,345" preferredShapeType="InteractionLifeLine" subject="xR3bCPGGAqBwATio" xmi:id="xR3bCPGGAqBwATin">
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement geometry="93,40,60,345" preferredShapeType="InteractionActor" subject="ZSHbCPGGAqBwATiU" xmi:id="pSHbCPGGAqBwATiT">
+				<elementFill color1="Cr:122,207,245,255" color2="" style="1" transparency="0" type="1"/>
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="pSHbCPGGAqBwATiT" geometry="127,131;500,131;" preferredShapeType="Message" subject="kRg7CPGGAqBwATjH" toDiagramElement="xR3bCPGGAqBwATin" xmi:id="MRg7CPGGAqBwATjK">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="xR3bCPGGAqBwATin" geometry="500,161;127,161;" preferredShapeType="Message" subject="k5I7CPGGAqBwATjX" toDiagramElement="pSHbCPGGAqBwATiT" xmi:id="U5I7CPGGAqBwATja">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="pSHbCPGGAqBwATiT" geometry="127,193;500,193;" preferredShapeType="Message" subject="s.U7CPGGAqBwATju" toDiagramElement="xR3bCPGGAqBwATin" xmi:id="i.U7CPGGAqBwATjx">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="xR3bCPGGAqBwATin" geometry="508,212;730,212;" preferredShapeType="Message" subject="NaW7CPGGAqBwATkt" toDiagramElement="pavbCPGGAqBwATi1" xmi:id="DaW7CPGGAqBwATkw">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="pavbCPGGAqBwATi1" geometry="730,242;508,242;" preferredShapeType="Message" subject="wUGHCPGGAqBwATlH" toDiagramElement="xR3bCPGGAqBwATin" xmi:id="oUGHCPGGAqBwATlK">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="xR3bCPGGAqBwATin" geometry="500,272;127,272;" preferredShapeType="Message" subject=".nuHCPGGAqBwATlW" toDiagramElement="pSHbCPGGAqBwATiT" xmi:id="hnuHCPGGAqBwATlZ">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="pSHbCPGGAqBwATiT" geometry="127,319;500,319;" preferredShapeType="Message" subject="DAZHCPGGAqBwATln" toDiagramElement="xR3bCPGGAqBwATin" xmi:id="rAZHCPGGAqBwATlq">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+			<uml:DiagramElement fromDiagramElement="xR3bCPGGAqBwATin" geometry="500,353;127,353;" preferredShapeType="Message" subject="ZMXHCPGGAqBwATl_" toDiagramElement="pSHbCPGGAqBwATiT" xmi:id="lMXHCPGGAqBwATmC">
+				<elementFont bold="false" color="Cr:0,0,0,255" italic="false" name="Dialog" size="11" style="0"/>
+				<elementLine color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0"/>
+			</uml:DiagramElement>
+		</uml:Diagram.element>
+	</uml:Diagram>
+</uml:Model>

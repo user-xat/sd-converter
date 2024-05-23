@@ -1,0 +1,313 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="https://www.omg.org/spec/XMI/2.1.1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML">
+  <uml:Model xmi:id="73e729c72a364111b6b9c57bc6af4b41" name="sd_model">
+    <packagedElement xmi:id="defaultEventOfMessageOccurrency" xmi:type="uml:AnyReceiveEvent" />
+    <packagedElement xmi:type="uml:Collaboration">
+      <ownedBehavior xmi:id="bfed5de9df9349159a7f0116810580be" xmi:type="uml:Interaction" name="Sequence Diagram1">
+        <lifeline xmi:id="213e9b12bec440ffaa301687d25acb72" xmi:type="uml:Lifeline" name="Система" coveredBy="cfe9aa90c42843ef8cc5dbf1b7742140 fb3c04e5c6a341c89161985ad70c489d 27c4e0ca256947388c420d22275734ed efda788770f349969913b4576b3f2cbd bfb31f7d68a0446c93a4064698f6bbb0 3bdf6988a551489ea7c97ab5b213d261 143dba9eb9da4452aa259bb5eebd4885 3a6da49243574e25b49f4cd00f8b4187 bea8520fae8c49888278f0ffb222232d fb759d9561b140abada0eb64a9629bf1 1072bb7c3b6543c380d86db31ed75ea6 be07ce18999641a28476f14eff81d737 819b4cb5932240f8b5c9facbd65fbc88 e91289ffd1ba46f28796d80aaba22b68 cb0cc5f48bd24155ab4608338baa3a36 5c5d6d4f48124dcb8fdebf0acbb17bfd e21eee47bf594837b729c7e2f436b153 00cca8a0c5824a0ca97f571868f40fbc fb9f1a0800ab4946aa67d3d4d02d61d7 8a797aa42f544c1b915e7fc413cbccf9 f830b8f4aab746328cb5b78b57490500 7ad11f31afe44b8c9de769bd143a710e 43353ca8c4fd4e8a9bbff8459792d112">
+          <xmi:Extension extender="Visual Paradigm">
+            <stopped xmi:value="false" />
+          </xmi:Extension>
+        </lifeline>
+        <lifeline xmi:id="dabc06435a87444f9414ff1c9fee184a" xmi:type="uml:Lifeline" name="Список товаров" coveredBy="1022d7e2a20b41739450f57a4fcb50ac 88976d2af7ed466d80a836a6b4c4b305">
+          <xmi:Extension extender="Visual Paradigm">
+            <stopped xmi:value="false" />
+          </xmi:Extension>
+        </lifeline>
+        <message xmi:id="b77f487ae1f14b2b9f529de53b276b5f" xmi:type="uml:Message" messageSort="reply" name="результат4" receiveEvent="ceda3da81f7b479390db9fadb4650de2" sendEvent="fb759d9561b140abada0eb64a9629bf1">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="fb759d9561b140abada0eb64a9629bf1" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="b77f487ae1f14b2b9f529de53b276b5f" />
+        <fragment xmi:id="ceda3da81f7b479390db9fadb4650de2" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="b77f487ae1f14b2b9f529de53b276b5f" />
+        <message xmi:id="a567d0d6d07f44cc913a39581edcfe71" xmi:type="uml:Message" messageSort="synchCall" name="[результат1 или результат? или результат3 или —&#10;результата= успешная оплата] напечататьЧек()" receiveEvent="43353ca8c4fd4e8a9bbff8459792d112" sendEvent="b173b285175d4b90afde5bad824b42ee">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="b173b285175d4b90afde5bad824b42ee" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="a567d0d6d07f44cc913a39581edcfe71" />
+        <fragment xmi:id="43353ca8c4fd4e8a9bbff8459792d112" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="a567d0d6d07f44cc913a39581edcfe71" />
+        <lifeline xmi:id="7510dffed8a046a1b81c66a0f9414d5e" xmi:type="uml:Lifeline" name="список&#10;предоплаче!&#10;покупок" coveredBy="bd2fb4bf23eb425aa6a26cb3be13f7b1 f05464d888db45678d310b1f81766abd">
+          <xmi:Extension extender="Visual Paradigm">
+            <stopped xmi:value="false" />
+          </xmi:Extension>
+        </lifeline>
+        <message xmi:id="71a15a196f124d769d820afd3cc32642" xmi:type="uml:Message" messageSort="reply" name="[not успех] сообщение |" receiveEvent="49e697694dec4eb8b74567a56475ff9f" sendEvent="fb3c04e5c6a341c89161985ad70c489d">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="fb3c04e5c6a341c89161985ad70c489d" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="71a15a196f124d769d820afd3cc32642" />
+        <fragment xmi:id="49e697694dec4eb8b74567a56475ff9f" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="71a15a196f124d769d820afd3cc32642" />
+        <message xmi:id="68a4353034144d9aa8f4eb4246ecaa29" xmi:type="uml:Message" messageSort="synchCall" name="[предоплата] проверитьФактПредоплаты&#10;(идентификаторПокупки, имяКассира, имяКлиента)" receiveEvent="8a797aa42f544c1b915e7fc413cbccf9" sendEvent="6fe6696d23aa454c819d9c8946e1494d">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="6fe6696d23aa454c819d9c8946e1494d" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="68a4353034144d9aa8f4eb4246ecaa29" />
+        <fragment xmi:id="8a797aa42f544c1b915e7fc413cbccf9" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="68a4353034144d9aa8f4eb4246ecaa29" />
+        <lifeline xmi:id="21805fecd1a84822b545f8ab15f290ba" xmi:type="uml:Lifeline" name="Кассир," coveredBy="7114e39ab85d434cb01265567a717634 08136aa35eaf408db9d57d27c5bbb1bb 64054e781c6042a0a7dbdbdab12231be 7ef38b42c0c648279ec3dedaffd553fa 159d417c793d401da6a81006f47a5c64 ee76d9a736d7465f994637072ac68a02 6fe6696d23aa454c819d9c8946e1494d c725a66973cc4887b60c782de1935aa5 b173b285175d4b90afde5bad824b42ee 49e697694dec4eb8b74567a56475ff9f c322ef4d43f5417f96c3472d78a49d8a 7fa7c9ea07904aed81d45b5889918203 98b71e3ae4514b7a9699ab33357f0bcf 24e680c6417f40fe8e5d440d60316d2e ceda3da81f7b479390db9fadb4650de2">
+          <xmi:Extension extender="Visual Paradigm">
+            <stopped xmi:value="false" />
+          </xmi:Extension>
+        </lifeline>
+        <message xmi:id="8967423011254d8ea6f328242e74db7a" xmi:type="uml:Message" messageSort="reply" name="результата" receiveEvent="98b71e3ae4514b7a9699ab33357f0bcf" sendEvent="3bdf6988a551489ea7c97ab5b213d261">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="3bdf6988a551489ea7c97ab5b213d261" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="8967423011254d8ea6f328242e74db7a" />
+        <fragment xmi:id="98b71e3ae4514b7a9699ab33357f0bcf" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="8967423011254d8ea6f328242e74db7a" />
+        <message xmi:id="0e6c1a9a7df84b46b3ae9d1078bdb8cb" xmi:type="uml:Message" messageSort="synchCall" name="безналичная оплата] оплатитьБезналичнымСпособом()" receiveEvent="00cca8a0c5824a0ca97f571868f40fbc" sendEvent="ee76d9a736d7465f994637072ac68a02">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="ee76d9a736d7465f994637072ac68a02" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="0e6c1a9a7df84b46b3ae9d1078bdb8cb" />
+        <fragment xmi:id="00cca8a0c5824a0ca97f571868f40fbc" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="0e6c1a9a7df84b46b3ae9d1078bdb8cb" />
+        <message xmi:id="16bdeae5745642c8bad38d8f8fde7fc8" xmi:type="uml:Message" messageSort="synchCall" name="иТовар(артикул)" receiveEvent="88976d2af7ed466d80a836a6b4c4b305" sendEvent="cfe9aa90c42843ef8cc5dbf1b7742140">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="cfe9aa90c42843ef8cc5dbf1b7742140" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="16bdeae5745642c8bad38d8f8fde7fc8" />
+        <fragment xmi:id="88976d2af7ed466d80a836a6b4c4b305" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="dabc06435a87444f9414ff1c9fee184a" message="16bdeae5745642c8bad38d8f8fde7fc8" />
+        <lifeline xmi:id="3db2ef257b494a38b45bb2ccbcfc83f8" xmi:type="uml:Lifeline" name="Bank" coveredBy="c787ffcf8fd9400189011766b56c98f8 5a54a70370bd47999b8d4de92ec58979 0428a501968e4d588ae198dc25f40858 5ff5c2f4d0ac4639b03bbd69aa15f77d">
+          <xmi:Extension extender="Visual Paradigm">
+            <stopped xmi:value="false" />
+          </xmi:Extension>
+        </lifeline>
+        <message xmi:id="5d9f9bd445854778b9223c0071962bb0" xmi:type="uml:Message" messageSort="reply" name="" receiveEvent="c322ef4d43f5417f96c3472d78a49d8a" sendEvent="27c4e0ca256947388c420d22275734ed">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="27c4e0ca256947388c420d22275734ed" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="5d9f9bd445854778b9223c0071962bb0" />
+        <fragment xmi:id="c322ef4d43f5417f96c3472d78a49d8a" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="5d9f9bd445854778b9223c0071962bb0" />
+        <message xmi:id="b16b5db84e6840778c8f78efbed5e4de" xmi:type="uml:Message" messageSort="synchCall" name="завершитьВвод()" receiveEvent="e91289ffd1ba46f28796d80aaba22b68" sendEvent="64054e781c6042a0a7dbdbdab12231be">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="64054e781c6042a0a7dbdbdab12231be" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="b16b5db84e6840778c8f78efbed5e4de" />
+        <fragment xmi:id="e91289ffd1ba46f28796d80aaba22b68" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="b16b5db84e6840778c8f78efbed5e4de" />
+        <message xmi:id="ff317a3c12fd4ee0bb651395135570e5" xmi:type="uml:Message" messageSort="synchCall" name="отправитьЗапрос(сумма)" receiveEvent="0428a501968e4d588ae198dc25f40858" sendEvent="bfb31f7d68a0446c93a4064698f6bbb0">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="bfb31f7d68a0446c93a4064698f6bbb0" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="ff317a3c12fd4ee0bb651395135570e5" />
+        <fragment xmi:id="0428a501968e4d588ae198dc25f40858" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="3db2ef257b494a38b45bb2ccbcfc83f8" message="ff317a3c12fd4ee0bb651395135570e5" />
+        <message xmi:id="0392a31f96124876a8b07f4fdffc19ce" xmi:type="uml:Message" messageSort="reply" name="= результат2 |" receiveEvent="e21eee47bf594837b729c7e2f436b153" sendEvent="c787ffcf8fd9400189011766b56c98f8">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="c787ffcf8fd9400189011766b56c98f8" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="3db2ef257b494a38b45bb2ccbcfc83f8" message="0392a31f96124876a8b07f4fdffc19ce" />
+        <fragment xmi:id="e21eee47bf594837b729c7e2f436b153" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="0392a31f96124876a8b07f4fdffc19ce" />
+        <message xmi:id="ace5ba983b4845f289617ce238c06792" xmi:type="uml:Message" messageSort="reply" name="= результатз |" receiveEvent="fb9f1a0800ab4946aa67d3d4d02d61d7" sendEvent="5a54a70370bd47999b8d4de92ec58979">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="5a54a70370bd47999b8d4de92ec58979" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="3db2ef257b494a38b45bb2ccbcfc83f8" message="ace5ba983b4845f289617ce238c06792" />
+        <fragment xmi:id="fb9f1a0800ab4946aa67d3d4d02d61d7" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="ace5ba983b4845f289617ce238c06792" />
+        <message xmi:id="74533c86de7d4b0a832d1397494db78f" xmi:type="uml:Message" messageSort="synchCall" name="[оплата наличными]&#10;оплатитьНаличными (полученнаясумма). &gt;" receiveEvent="cb0cc5f48bd24155ab4608338baa3a36" sendEvent="7ef38b42c0c648279ec3dedaffd553fa">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="7ef38b42c0c648279ec3dedaffd553fa" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="74533c86de7d4b0a832d1397494db78f" />
+        <fragment xmi:id="cb0cc5f48bd24155ab4608338baa3a36" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="74533c86de7d4b0a832d1397494db78f" />
+        <message xmi:id="a5cc90958e70475a961b49b561ffdde8" xmi:type="uml:Message" messageSort="synchCall" name="создатьЧек(имяКассира, имяПокупателя)&#10;&gt;" receiveEvent="1072bb7c3b6543c380d86db31ed75ea6" sendEvent="7114e39ab85d434cb01265567a717634">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="7114e39ab85d434cb01265567a717634" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="a5cc90958e70475a961b49b561ffdde8" />
+        <fragment xmi:id="1072bb7c3b6543c380d86db31ed75ea6" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="a5cc90958e70475a961b49b561ffdde8" />
+        <message xmi:id="0ee87c3555b24a3dab2e1cd9c34d4b92" xmi:type="uml:Message" messageSort="synchCall" name="оплата по карте]оплатитьПоКарте()" receiveEvent="5c5d6d4f48124dcb8fdebf0acbb17bfd" sendEvent="159d417c793d401da6a81006f47a5c64">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="159d417c793d401da6a81006f47a5c64" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="0ee87c3555b24a3dab2e1cd9c34d4b92" />
+        <fragment xmi:id="5c5d6d4f48124dcb8fdebf0acbb17bfd" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="0ee87c3555b24a3dab2e1cd9c34d4b92" />
+        <message xmi:id="111b90b82b514788a4a9ac3c35f8626c" xmi:type="uml:Message" messageSort="reply" name="результатз |" receiveEvent="24e680c6417f40fe8e5d440d60316d2e" sendEvent="3a6da49243574e25b49f4cd00f8b4187">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="3a6da49243574e25b49f4cd00f8b4187" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="111b90b82b514788a4a9ac3c35f8626c" />
+        <fragment xmi:id="24e680c6417f40fe8e5d440d60316d2e" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="111b90b82b514788a4a9ac3c35f8626c" />
+        <message xmi:id="b976bc701cee426eae4750c3f3061735" xmi:type="uml:Message" messageSort="reply" name="результат1, сдача" receiveEvent="7fa7c9ea07904aed81d45b5889918203" sendEvent="efda788770f349969913b4576b3f2cbd">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="efda788770f349969913b4576b3f2cbd" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="b976bc701cee426eae4750c3f3061735" />
+        <fragment xmi:id="7fa7c9ea07904aed81d45b5889918203" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="b976bc701cee426eae4750c3f3061735" />
+        <message xmi:id="38cb94d4ab384ec4ac82278c837e9a85" xmi:type="uml:Message" messageSort="reply" name="= результат4 |" receiveEvent="f830b8f4aab746328cb5b78b57490500" sendEvent="bd2fb4bf23eb425aa6a26cb3be13f7b1">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="bd2fb4bf23eb425aa6a26cb3be13f7b1" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="7510dffed8a046a1b81c66a0f9414d5e" message="38cb94d4ab384ec4ac82278c837e9a85" />
+        <fragment xmi:id="f830b8f4aab746328cb5b78b57490500" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="38cb94d4ab384ec4ac82278c837e9a85" />
+        <message xmi:id="4a41fb265ddb447d8451e2c459dc6c43" xmi:type="uml:Message" messageSort="synchCall" name="*ввестиТоварнуюПозицию(артикул, количество)&#10;Г &gt;" receiveEvent="be07ce18999641a28476f14eff81d737" sendEvent="08136aa35eaf408db9d57d27c5bbb1bb">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="08136aa35eaf408db9d57d27c5bbb1bb" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="4a41fb265ddb447d8451e2c459dc6c43" />
+        <fragment xmi:id="be07ce18999641a28476f14eff81d737" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="4a41fb265ddb447d8451e2c459dc6c43" />
+        <message xmi:id="8ea1ebe57d9e40f498346c325a8c9ff3" xmi:type="uml:Message" messageSort="synchCall" name="найтиПредоплату(идентификаторПокупки)" receiveEvent="f05464d888db45678d310b1f81766abd" sendEvent="bea8520fae8c49888278f0ffb222232d">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="bea8520fae8c49888278f0ffb222232d" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="8ea1ebe57d9e40f498346c325a8c9ff3" />
+        <fragment xmi:id="f05464d888db45678d310b1f81766abd" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="7510dffed8a046a1b81c66a0f9414d5e" message="8ea1ebe57d9e40f498346c325a8c9ff3" />
+        <message xmi:id="6d9548afd76d4b1caa9b14f4523569b3" xmi:type="uml:Message" messageSort="synchCall" name="отправитьЗапрос(сумма)" receiveEvent="5ff5c2f4d0ac4639b03bbd69aa15f77d" sendEvent="143dba9eb9da4452aa259bb5eebd4885">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="143dba9eb9da4452aa259bb5eebd4885" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="6d9548afd76d4b1caa9b14f4523569b3" />
+        <fragment xmi:id="5ff5c2f4d0ac4639b03bbd69aa15f77d" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="3db2ef257b494a38b45bb2ccbcfc83f8" message="6d9548afd76d4b1caa9b14f4523569b3" />
+        <message xmi:id="1238050edd82400191252914af625b5e" xmi:type="uml:Message" messageSort="reply" name="‘успех, названиеТовара, |" receiveEvent="819b4cb5932240f8b5c9facbd65fbc88" sendEvent="1022d7e2a20b41739450f57a4fcb50ac">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="1022d7e2a20b41739450f57a4fcb50ac" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="dabc06435a87444f9414ff1c9fee184a" message="1238050edd82400191252914af625b5e" />
+        <fragment xmi:id="819b4cb5932240f8b5c9facbd65fbc88" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="1238050edd82400191252914af625b5e" />
+        <message xmi:id="b2655cfa4dea400083bec0552bad3818" xmi:type="uml:Message" messageSort="asyncCall" name="[результат1 или peaynbTatT2 или результат3 или&#10;‘успешная оплата] зарегистрироватьЧек()" receiveEvent="7ad11f31afe44b8c9de769bd143a710e" sendEvent="c725a66973cc4887b60c782de1935aa5">
+          <Extension extender="Visual Paradigm">
+            <type xmi:value="recursive" />
+          </Extension>
+        </message>
+        <fragment xmi:id="c725a66973cc4887b60c782de1935aa5" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="21805fecd1a84822b545f8ab15f290ba" message="b2655cfa4dea400083bec0552bad3818" />
+        <fragment xmi:id="7ad11f31afe44b8c9de769bd143a710e" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="213e9b12bec440ffaa301687d25acb72" message="b2655cfa4dea400083bec0552bad3818" />
+      </ownedBehavior>
+    </packagedElement>
+  </uml:Model>
+  <uml:Diagram xmi:id="cb7d6f3a37154288bf9a6af482bf435d" diagramType="InteractionDiagram" documentation="">
+    <uml:Diagram.element>
+      <uml:DiagramElement id="d699fea819234e419835ea58c1ee269b" preferredShapeType="InteractionLifeLine" subject="213e9b12bec440ffaa301687d25acb72" geometry="370,10,152,983" />
+      <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+      <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+      <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      <uml:DiagramElement id="a909468c111149b398a00c3e9d05e6bc" preferredShapeType="InteractionLifeLine" subject="dabc06435a87444f9414ff1c9fee184a" geometry="602,10,154,983" />
+      <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+      <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+      <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      <uml:DiagramElement id="a9847c03591242d2a08c95b8b62ac4f5" preferredShapeType="Message" subject="b77f487ae1f14b2b9f529de53b276b5f" geometry="440,833;80,833;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="3340ef8e857a44419d45138f17f13943">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="002324d8beed4404a0e018742402afa8" preferredShapeType="Message" subject="a567d0d6d07f44cc913a39581edcfe71" geometry="70,932;442,932;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="2dce9c1946dd41b9bc220acf6eb58d53" preferredShapeType="InteractionLifeLine" subject="7510dffed8a046a1b81c66a0f9414d5e" geometry="1072,10,166,983" />
+      <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+      <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+      <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      <uml:DiagramElement id="18d959deb362473c99aa08c9cbdec465" preferredShapeType="Message" subject="71a15a196f124d769d820afd3cc32642" geometry="438,229;76,229;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="3340ef8e857a44419d45138f17f13943">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="caf8f588942b4f48841ecc6bb1c0705c" preferredShapeType="Message" subject="68a4353034144d9aa8f4eb4246ecaa29" geometry="81,724;440,724;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="3340ef8e857a44419d45138f17f13943" preferredShapeType="InteractionActor" subject="21805fecd1a84822b545f8ab15f290ba" geometry="34,8,68,985">
+        <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="3cce01a87d4d4382bd740b0a933e4321" preferredShapeType="Message" subject="8967423011254d8ea6f328242e74db7a" geometry="435,530;80,530;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="3340ef8e857a44419d45138f17f13943">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="7b25a972a5e9445580b4d96bea6f73e5" preferredShapeType="Message" subject="0e6c1a9a7df84b46b3ae9d1078bdb8cb" geometry="75,583;439,583;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="86e6e62321b340dc8685cdb81d231c2a" preferredShapeType="Message" subject="16bdeae5745642c8bad38d8f8fde7fc8" geometry="453,149;673,149;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="a909468c111149b398a00c3e9d05e6bc">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="874b901aa7b9464c804d8750810560f5" preferredShapeType="InteractionLifeLine" subject="3db2ef257b494a38b45bb2ccbcfc83f8" geometry="838,10,153,983" />
+      <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+      <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+      <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      <uml:DiagramElement id="a2a92ac870f0417784d0b05ce4a91172" preferredShapeType="Message" subject="5d9f9bd445854778b9223c0071962bb0" geometry="437,307;77,307;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="3340ef8e857a44419d45138f17f13943">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="1034bde4567f4d2cae41ccedf373505e" preferredShapeType="Message" subject="b16b5db84e6840778c8f78efbed5e4de" geometry="76,268;437,268;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="93b8dee0138b4289909f4d904a3d19b0" preferredShapeType="Message" subject="ff317a3c12fd4ee0bb651395135570e5" geometry="456,458;907,458;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="874b901aa7b9464c804d8750810560f5">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="d8cd09366c444ba69a69b26d0d0135d7" preferredShapeType="Message" subject="0392a31f96124876a8b07f4fdffc19ce" geometry="906,502;455,502;" fromDiagramElement="874b901aa7b9464c804d8750810560f5" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="4c36f325714f4cbfa32c29daa5e4d688" preferredShapeType="Message" subject="ace5ba983b4845f289617ce238c06792" geometry="905,657;455,657;" fromDiagramElement="874b901aa7b9464c804d8750810560f5" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="341a3bc895534ccea0505ae8764cdd9e" preferredShapeType="Message" subject="74533c86de7d4b0a832d1397494db78f" geometry="78,348;437,348;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="303e62f19c834815b7f603fd9a978d07" preferredShapeType="Message" subject="a5cc90958e70475a961b49b561ffdde8" geometry="72,87;437,87;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="7c2ca1d7535642baae86c188427761b9" preferredShapeType="Message" subject="0ee87c3555b24a3dab2e1cd9c34d4b92" geometry="77,431;437,431;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="fc0ab317085047d2b5939778072ac1b1" preferredShapeType="Message" subject="111b90b82b514788a4a9ac3c35f8626c" geometry="439,683;78,683;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="3340ef8e857a44419d45138f17f13943">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="b063bb64b09d47e9b7bf4615a6d96f55" preferredShapeType="Message" subject="b976bc701cee426eae4750c3f3061735" geometry="437,393;77,393;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="3340ef8e857a44419d45138f17f13943">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="4b99d754b430401bb8f144ce18f913e9" preferredShapeType="Message" subject="38cb94d4ab384ec4ac82278c837e9a85" geometry="1144,809;455,809;" fromDiagramElement="2dce9c1946dd41b9bc220acf6eb58d53" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="5d13b5d070d745b9b8a891cb5ad2a663" preferredShapeType="Message" subject="4a41fb265ddb447d8451e2c459dc6c43" geometry="77,131;440,131;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="d36d7ce592a346e0bf57856536a7b76b" preferredShapeType="Message" subject="8ea1ebe57d9e40f498346c325a8c9ff3" geometry="456,761;1146,761;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="2dce9c1946dd41b9bc220acf6eb58d53">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="7a04b1a102e14c36bdecad1aff02d99b" preferredShapeType="Message" subject="6d9548afd76d4b1caa9b14f4523569b3" geometry="455,614;907,614;" fromDiagramElement="d699fea819234e419835ea58c1ee269b" toDiagramElement="874b901aa7b9464c804d8750810560f5">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="f9e0dda612a44ffabb1e3607fae58696" preferredShapeType="Message" subject="1238050edd82400191252914af625b5e" geometry="674,187;456,187;" fromDiagramElement="a909468c111149b398a00c3e9d05e6bc" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="2ffb79712bfd4501b7cdc023410bdc74" preferredShapeType="Message" subject="b2655cfa4dea400083bec0552bad3818" geometry="75,873;443,873;" fromDiagramElement="3340ef8e857a44419d45138f17f13943" toDiagramElement="d699fea819234e419835ea58c1ee269b">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+    </uml:Diagram.element>
+  </uml:Diagram>
+</xmi:XMI>

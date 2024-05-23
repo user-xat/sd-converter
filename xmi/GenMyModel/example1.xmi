@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.genmymodel.ecoreonline.graphic="http://com.genmymodel.ecoreonline.graphic/2.0" xmlns:com.genmymodel.graphic.uml="http://com.genmymodel.ecoreonline.graphic.uml/1.0" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_Kv7IsBWxEe-Ihd83XV4upQ" name="sd-vkr">
+    <packageImport xmi:id="_Kv7IsRWxEe-Ihd83XV4upQ" importingNamespace="_Kv7IsBWxEe-Ihd83XV4upQ">
+      <importedPackage href="http://www.omg.org/spec/UML/20131001/PrimitiveTypes.xmi#/"/>
+    </packageImport>
+    <packagedElement xsi:type="uml:Interaction" xmi:id="_Kv7IshWxEe-Ihd83XV4upQ" name="Interaction">
+      <ownedComment xmi:id="_nfiRAPffEDyeuvI7Si-o0w">
+        <body>Создание ограничений на расписание</body>
+      </ownedComment>
+      <lifeline xmi:id="_SuwJsPffEDyeuvI7Si-o0w" name="Редактор" interaction="_Kv7IshWxEe-Ihd83XV4upQ" coveredBy="_exEFAPffEDyeuvI7Si-o0w _exMn4PffEDyeuvI7Si-o0w">
+      </lifeline>
+      <lifeline xmi:id="_Zcnv4PffEDyeuvI7Si-o0w" name="Система" interaction="_Kv7IshWxEe-Ihd83XV4upQ" coveredBy="_exAaoPffEDyeuvI7Si-o0w _exF6MPffEDyeuvI7Si-o0w _exLZwPffEDyeuvI7Si-o0w">
+      </lifeline>
+      <fragment xsi:type="uml:BehaviorExecutionSpecification" xmi:id="_exAaoPffEDyeuvI7Si-o0w" covered="_Zcnv4PffEDyeuvI7Si-o0w" enclosingInteraction="_Kv7IshWxEe-Ihd83XV4upQ" finish="_exLZwPffEDyeuvI7Si-o0w" start="_exF6MPffEDyeuvI7Si-o0w">
+      </fragment>
+      <fragment xsi:type="uml:MessageOccurrenceSpecification" xmi:id="_exEFAPffEDyeuvI7Si-o0w" name="MessageOccurrenceSpecification" covered="_SuwJsPffEDyeuvI7Si-o0w" enclosingInteraction="_Kv7IshWxEe-Ihd83XV4upQ" message="_exIWcPffEDyeuvI7Si-o0w">
+      </fragment>
+      <fragment xsi:type="uml:MessageOccurrenceSpecification" xmi:id="_exF6MPffEDyeuvI7Si-o0w" name="MessageOccurrenceSpecification2" covered="_Zcnv4PffEDyeuvI7Si-o0w" enclosingInteraction="_Kv7IshWxEe-Ihd83XV4upQ" message="_exIWcPffEDyeuvI7Si-o0w">
+      </fragment>
+      <fragment xsi:type="uml:MessageOccurrenceSpecification" xmi:id="_exLZwPffEDyeuvI7Si-o0w" name="MessageOccurrenceSpecification3" covered="_Zcnv4PffEDyeuvI7Si-o0w" enclosingInteraction="_Kv7IshWxEe-Ihd83XV4upQ" message="_exOdEPffEDyeuvI7Si-o0w">
+      </fragment>
+      <fragment xsi:type="uml:MessageOccurrenceSpecification" xmi:id="_exMn4PffEDyeuvI7Si-o0w" name="MessageOccurrenceSpecification4" covered="_SuwJsPffEDyeuvI7Si-o0w" enclosingInteraction="_Kv7IshWxEe-Ihd83XV4upQ" message="_exOdEPffEDyeuvI7Si-o0w">
+      </fragment>
+      <message xmi:id="_exIWcPffEDyeuvI7Si-o0w" name="создатьОграниченияНаРасписание()" interaction="_Kv7IshWxEe-Ihd83XV4upQ" receiveEvent="_exF6MPffEDyeuvI7Si-o0w" sendEvent="_exEFAPffEDyeuvI7Si-o0w">
+      </message>
+      <message xmi:id="_exOdEPffEDyeuvI7Si-o0w" name="расписаниеСОграничениями" interaction="_Kv7IshWxEe-Ihd83XV4upQ" messageSort="reply" receiveEvent="_exMn4PffEDyeuvI7Si-o0w" sendEvent="_exLZwPffEDyeuvI7Si-o0w">
+      </message>
+    </packagedElement>
+  </uml:Model>
+</xmi:XMI>
