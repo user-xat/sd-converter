@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="https://www.omg.org/spec/XMI/2.1.1" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML">
+  <uml:Model xmi:id="a08e2f9ab24a4afea6d0922251f33279" name="sd_model">
+    <packagedElement xmi:id="defaultEventOfMessageOccurrency" xmi:type="uml:AnyReceiveEvent" />
+    <packagedElement xmi:type="uml:Collaboration">
+      <ownedBehavior xmi:id="ee9884d419044bc8b849299509a89d50" xmi:type="uml:Interaction" name="Sequence Diagram1">
+        <lifeline xmi:id="ef33d960e864433b80dc6586ad579276" xmi:type="uml:Lifeline" name="Г? система" coveredBy="fce5023d2bde4455a5f1deff31853892 82e3335a729d4195aed187d52a53b6be">
+          <xmi:Extension extender="Visual Paradigm">
+            <stopped xmi:value="false" />
+          </xmi:Extension>
+        </lifeline>
+        <ownedComment xmi:id="074000efc96e4ba7a611f304638d9900" xmi:type="uml:Comment" name="" body="Работа с прочитанной&#10;заметкой" />
+        <message xmi:id="f9382f089c684bf5b30b97a4d02ddc49" xmi:type="uml:Message" messageSort="synchCall" name="проставитьОтметкуОПрочтенииЗаметки&#10;(ПолученнаяЗаметка)" receiveEvent="fce5023d2bde4455a5f1deff31853892" sendEvent="8c0d6ba4b1b048108d32e4b33a8fc775">
+          <xmi:Extension extender="Visual Paradigm">
+            <asynshronous xmi:value="false" />
+          </xmi:Extension>
+        </message>
+        <fragment xmi:id="8c0d6ba4b1b048108d32e4b33a8fc775" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="043c31e54d2d4c4d817c8582211ae47d" message="f9382f089c684bf5b30b97a4d02ddc49" />
+        <fragment xmi:id="fce5023d2bde4455a5f1deff31853892" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="ef33d960e864433b80dc6586ad579276" message="f9382f089c684bf5b30b97a4d02ddc49" />
+        <lifeline xmi:id="043c31e54d2d4c4d817c8582211ae47d" xmi:type="uml:Lifeline" name="$ Получатель: Actor" coveredBy="8c0d6ba4b1b048108d32e4b33a8fc775 be45254e90ce4f37ad240c5947867577">
+          <xmi:Extension extender="Visual Paradigm">
+            <stopped xmi:value="false" />
+          </xmi:Extension>
+        </lifeline>
+        <message xmi:id="879c7012884f4dbc80bbe0132d8347ba" xmi:type="uml:Message" messageSort="synchCall" name="‘созданаПрочитаннаяЗаметка." receiveEvent="82e3335a729d4195aed187d52a53b6be" sendEvent="be45254e90ce4f37ad240c5947867577">
+          <xmi:Extension extender="Visual Paradigm">
+            <asynshronous xmi:value="false" />
+          </xmi:Extension>
+        </message>
+        <fragment xmi:id="be45254e90ce4f37ad240c5947867577" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="043c31e54d2d4c4d817c8582211ae47d" message="879c7012884f4dbc80bbe0132d8347ba" />
+        <fragment xmi:id="82e3335a729d4195aed187d52a53b6be" xmi:type="uml:MessageOccurrenceSpecification" event="defaultEventOfMessageOccurrency" covered="ef33d960e864433b80dc6586ad579276" message="879c7012884f4dbc80bbe0132d8347ba" />
+      </ownedBehavior>
+    </packagedElement>
+  </uml:Model>
+  <uml:Diagram xmi:id="89bd07c41a0c47e291b56183c05d5ed2" diagramType="InteractionDiagram" documentation="">
+    <uml:Diagram.element>
+      <uml:DiagramElement id="eaa7c89868cf4517bd17486ee4331dd8" preferredShapeType="InteractionLifeLine" subject="ef33d960e864433b80dc6586ad579276" geometry="720,27,110,241" />
+      <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+      <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+      <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      <uml:DiagramElement id="7ce2e81e23c3451cb1a26c97e8fc9875" preferredShapeType="NOTE" subject="074000efc96e4ba7a611f304638d9900" geometry="26,32,177,47">
+        <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="a82c29d6c1c6406d87f60c3a3139cf49" preferredShapeType="Message" subject="f9382f089c684bf5b30b97a4d02ddc49" geometry="334,92;764,92;" fromDiagramElement="81ae2dd8f50c482197c64f3d8c8e2ee9" toDiagramElement="eaa7c89868cf4517bd17486ee4331dd8">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+      <uml:DiagramElement id="81ae2dd8f50c482197c64f3d8c8e2ee9" preferredShapeType="InteractionLifeLine" subject="043c31e54d2d4c4d817c8582211ae47d" geometry="247,27,176,241" />
+      <elementFill style="1" transparency="0" type="1" color1="Cr:122,207,245,255" color2="" />
+      <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+      <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      <uml:DiagramElement id="da458a890616474d9f75c15d6bbd5cbe" preferredShapeType="Message" subject="879c7012884f4dbc80bbe0132d8347ba" geometry="341,225;773,225;" fromDiagramElement="81ae2dd8f50c482197c64f3d8c8e2ee9" toDiagramElement="eaa7c89868cf4517bd17486ee4331dd8">
+        <elementFont color="Cr:0,0,0,255" bold="false" italic="false" style="0" name="Dialog" size="11" />
+        <elementFont color="Cr:0,0,0,255" style="1" transparency="0" weight="1.0" />
+      </uml:DiagramElement>
+    </uml:Diagram.element>
+  </uml:Diagram>
+</xmi:XMI>

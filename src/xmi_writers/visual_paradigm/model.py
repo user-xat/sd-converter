@@ -56,8 +56,9 @@ def create_interaction(parent: xml.Element):
 
 def create_message(parent: xml.Element, elem: SDMessage):
     msg = base.create_message(parent, elem.id.hex, MESSAGE_TYPE[elem.cls], elem.name, elem.receiver.id.hex if elem.receiver else "", elem.sender.id.hex if elem.sender else "")
-    if ObjectType.recursive_sync_message or ObjectType.recursive_reply_message:
-        ext = base.create_subelement(msg, 'Extension', { "extender": "Visual Paradigm"})
+    ext = base.create_subelement(msg, 'xmi:Extension', { "extender": "Visual Paradigm"})
+    base.create_subelement(ext, 'asynshronous', {'xmi:value': 'true' if elem.is_async() else 'false'})
+    if elem.cls in [ObjectType.recursive_sync_message, ObjectType.recursive_reply_message]:
         base.create_subelement(ext, 'type', {"xmi:value": "recursive"})
 
 def create_fragment(parent: xml.Element, conn: ObjMesConnection):
