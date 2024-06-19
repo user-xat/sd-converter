@@ -1,17 +1,17 @@
 import cv2
 from ultralytics import YOLO
+import logging
 
 
-def recognize(model_file: str, filepath: str | list[str]):
+def recognize(model_file: str, filepath: str | list[str], verbose: bool):
     imgs = _load_imgs(filepath)
-    # print(f'shape: {imgs[0].shape}')
-    # print(f'type: {type(imgs[0])}')
-    # print(f'sub: {imgs[0][8:600, 1:500].shape}')
     model = YOLO(model_file)
-    results = model.predict(source=imgs)
+    logging.info('start of the recognition of chart elements in the image')
+    results = model.predict(source=imgs, verbose=verbose)
     return results
 
 def _load_imgs(filepath: str | list[str]):
+    logging.info('image loading has started')
     if type(filepath) is str:
         return cv2.imread(filepath)
     if type(filepath) is list:

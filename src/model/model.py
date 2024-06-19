@@ -1,4 +1,5 @@
 import uuid
+import logging
 import numpy as np
 from pydantic import BaseModel, Field, ConfigDict
 import model.elements as elems
@@ -25,6 +26,7 @@ class SDModel(BaseModel):
 
     @classmethod
     def make(cls, data, coef) -> "SDModel":
+        logging.info(f'creating a model for the {data.path}')
         model: list[SDWrappedElement] = list()
         for box in data.boxes:
             cls = ObjectType(box.cls.item())
@@ -46,16 +48,15 @@ class SDModel(BaseModel):
             else:
                 sd_elem = elems.SDElement(cls=cls, conf=conf, xyxy=xyxy, xyxyn=xyxyn)
             model.append(SDWrappedElement(this=sd_elem, coef=coef))
-        print(f'elements = {len(model)}')
+        logging.debug(f'elements = {len(model)}')
         return SDModel(elements=model, orig_img=data.orig_img)
 
     def create_model(self) -> None:
+        logging.info('the process of creating links between the elements has started')
         self.__init_mess_obj()
         self.__create_links()
         self.__find_pair_message()
-        self.root.sub_elements.extend(self.elements)
-        self.root.find_sub_elements()
-        self.root.get_attributes(self.orig_img, self.objects)
+        self.__find_sub_elements()
         self.__align_objects_size()
 
     def items(self):
@@ -63,6 +64,7 @@ class SDModel(BaseModel):
 
     # Create links between objects and messages
     def __create_links(self):
+        logging.info('creating links between objects and messages')
         for message in self.messages:
             x1, _, x2, _ = message.xyxy
             left_obj, right_obj = None, None
@@ -100,6 +102,7 @@ class SDModel(BaseModel):
                     right_obj.receive_messages.append(right_connect)
 
     def __find_pair_message(self):
+        logging.info('searching for message pairs')
         for i, send in enumerate(self.messages):
             if send.cls not in [ObjectType.synchronous_message,
                                  ObjectType.asynchronous_message,
@@ -131,3 +134,9 @@ class SDModel(BaseModel):
         for obj in self.objects:
             if not obj.terminator:
                 obj.xyxy = (obj.xyxy[0], obj.xyxy[1], obj.xyxy[2], max_y)
+    
+    def __find_sub_elements(self):
+        logging.info('determining the nesting of elements')
+        self.root.sub_elements.extend(self.elements)
+        self.root.find_sub_elements()
+        self.root.get_attributes(self.orig_img, self.objects)

@@ -1,3 +1,4 @@
+import logging
 import xmi_writers.visual_paradigm.model as xmi_model
 import xmi_writers.visual_paradigm.diagram as xmi_diagram
 import xml.etree.ElementTree as xml
@@ -8,6 +9,7 @@ from model.object_types import ObjectType
 
 
 def write(filename: str, sd_model: SDModel):
+    logging.info('xmi file generation has started')
     xml_root = xmi_model.init_xmi()
     _write_model(xml_root, sd_model)
     _write_diagram(xml_root, sd_model)
@@ -17,6 +19,7 @@ def write(filename: str, sd_model: SDModel):
 
 # Model
 def _write_model(root: xml.Element, model: SDModel):
+    logging.info('xmi model generation')
     xml_model = _create_model(root, model)
     xml_model = xmi_model.create_collaboration(xml_model)
     xml_model = xmi_model.create_interaction(xml_model)
@@ -61,6 +64,7 @@ def _create_note(parent: xml.Element, note: SDNote):
 
 # Diagram
 def _write_diagram(root: xml.Element, model: SDModel):
+    logging.info('xmi diagram generation')
     xml_diagram = xmi_diagram.create_Diagram(root, model)
     _sub_write_diagram(xml_diagram, model.root)
 
