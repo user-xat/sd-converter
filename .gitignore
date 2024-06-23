@@ -5,3 +5,4 @@ main.dist
 .venv
 img/*.xmi
 **/*.log
+sd2xmi_out

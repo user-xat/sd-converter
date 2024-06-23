@@ -12,7 +12,6 @@ def init_root():
         'xmi:version': '2.1',
         'xmlns:xmi': "https://www.omg.org/spec/XMI/2.1.1",
         'xmlns:uml': "http://www.eclipse.org/uml2/2.0.0/UML",
-        # 'xmlns:xsi': "http://www.w3.org/2001/XMLSchema-instance"
     })
 
 

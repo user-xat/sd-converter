@@ -15,6 +15,7 @@ def write(filename: str, sd_model: SDModel):
     _write_diagram(xml_root, sd_model)
     tree = xml.ElementTree(xml_root)
     xml.indent(tree, space='  ')
+    logging.info(f'{filename} file has been saved')
     tree.write(filename, encoding='utf-8', xml_declaration=True)
 
 # Model
@@ -26,10 +27,6 @@ def _write_model(root: xml.Element, model: SDModel):
     _sub_write_model(xml_model, model.root)
 
 def _sub_write_model(root: xml.Element, sd_elem: SDWrappedElement):
-    # if sd_elem.this and root.tag == 'uml:Model' and not isinstance(sd_elem.this, SDPackage):
-    #     root = model.create_collaboration(root)
-    #     root = model.create_interaction(root)
-
     xml_elem = root
     if sd_elem.this:
         if isinstance(sd_elem.this, SDPackage):
@@ -41,6 +38,8 @@ def _sub_write_model(root: xml.Element, sd_elem: SDWrappedElement):
         elif isinstance(sd_elem.this, SDMessage):
             xml_elem = _create_message(root, sd_elem.this)
 
+    if xml_elem is None:
+        xml_elem = root
     [_sub_write_model(xml_elem, sub_sd_elem) for sub_sd_elem in sd_elem.sub_elements]
 
 def _create_model(parent: xml.Element, sd_model: SDModel):
